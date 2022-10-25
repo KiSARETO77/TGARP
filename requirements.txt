@@ -2,3 +2,4 @@ amino.fix
 json_minify
 requests
 aiohttp
+samino
