@@ -7,12 +7,12 @@ from os import system as Z
 Z("clear")
 C=Client(proxies={"https":"http://dimatjasko10:KWJYs68q@185.112.13.43:2831"})
 Ç=Client(proxies={"https":"http://dimatjasko10:KWJYs68q@185.112.13.43:2831"})
+Ç.login("pb-@digdig.org","GOKU12##")
+C.login("pb-@digdig.org","GOKU12##")
 S=Local(comId=3434136,proxies={"https":"http://dimatjasko10:KWJYs68q@185.112.13.43:2831"})
 q,p,Q=0,100,0
 PI=[None,1,"1","None"]
 while 1>0:
-	Ç.login("pb-@digdig.org","GOKU12##")
-	C.login("pb-@digdig.org","GOKU12##")
 	M=S.get_online_users(start=q,size=p)
 	q+=100
 	p+=200
