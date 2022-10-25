@@ -31,5 +31,5 @@ while 1>0:
 				ZZ(60)
 				pass
 			except Exception as F:
-				print(F)
+				print(F);ZZ(120)
 				pass
