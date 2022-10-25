@@ -1,5 +1,6 @@
 from aminofix.lib.util.exceptions import IpTemporaryBan
 from aminofix import Client,SubClient
+from samino import Client,Local
 from time import sleep as ZZ
 from os import system as Z
 #############################################
@@ -10,8 +11,8 @@ q,p,Q=0,100,0
 PI=[None,1,"1","None"]
 while 1>0:
 	Ç.login("pb-@digdig.org","GOKU12##")
-	S=SubClient(comId=C,profile=Ç.profile)
-	M=S.get_online_users(start=q,size=p).profile
+	S=Local(comId=C,proxies={"https":"http://dimatjasko10:KWJYs68q@185.112.13.43:2831"})
+	M=S.get_online_users(start=q,size=p)
 	q+=100
 	p+=200
 	NN,LL,UU=M.nickname,M.level,M.userId
@@ -20,7 +21,8 @@ while 1>0:
 		if P in PI:
 			try:
 				Q+=1
-				Ç.invite_to_chat(chatId=O,userId=U)
+				S=Local(comId=0,proxies={"https":"http://dimatjasko10:KWJYs68q@185.112.13.43:2831"})
+				S.invite_to_chat(chatId=O,userId=U)
 				print(f"- {Q} Done invite {N} -{L}")
 			except IpTemporaryBan:
 				print(f"Wait For 60 Second")
